@@ -1,0 +1,15 @@
+#running task from 1 to 6
+case $1 in
+1) 
+	python inverted_index.py data/books.json;;
+2)
+	python join.py data/records.json;;
+3)
+	python friend_count.py data/friends.json;;
+4)
+	python asymmetric_friendships.py data/friends.json;;
+5)
+	python unique_trims.py data/dna.json;;  
+6)
+	python multiply.py data/matrix.json;;
+esac
